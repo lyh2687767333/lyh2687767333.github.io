@@ -1,0 +1,215 @@
+/*<!-- Demo styles -->*/
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+
+/*-----------------------导航-------------------------------------*/
+.swiper-button-next {
+    left: 50%;
+    top: 100%;
+    animation: img1 1s linear infinite;
+    background: url("../img/jiezhi.png");
+    background-size: 100% 100%;
+    z-index: 15;
+    -webkit-transform: translate(-50%, -50%);
+}
+
+@keyframes img1 {
+    from {
+        opacity: 0;
+        top: 98%;
+    }
+    to {
+        opacity: 1;
+        top: 96%;
+    }
+}
+
+/*-----------------------------------------音乐开始------------------------------*/
+#music {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    z-index: 9;
+    /*background: blue;*/
+}
+
+@keyframes dong {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.musictu {
+    animation: dong 2s linear infinite;
+    position: absolute;
+    left: 8px;
+    top: -4px;
+}
+
+.bg {
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: 8;
+    display: block;
+}
+
+/*------------------------------------------音乐结束---------------------------------------------*/
+.swiper-slide.diyi {
+    background-image: url("../img/onebg.jpg");
+    background-size: 100% 100%;
+}
+
+.swiper-slide.diyi .diyi-top {
+    border: 12px solid white;
+    z-index: 5;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.swiper-slide.diyi .diyi-top img {
+    width: 100%;
+}
+
+.swiper-slide.diyi .diyi-zhong {
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiper-slide.diyi .diyi-zhong img.ring {
+    width: 30%;
+    position: absolute;
+    left: 7%;
+    top: 0;
+}
+
+.swiper-slide.diyi .diyi-zhong img.mary {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.zuibotton {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.zuibotton p {
+    margin: 0;
+    margin-top: 10%;
+}
+
+/*第二屏开始*/
+.swiper-slide.two {
+    background: url("../img/twobg.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide.two img {
+    width: 100%;
+}
+
+.swiper-slide.two .top {
+    width: 40%;
+    height: 25%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border: 5px solid white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-slide.two .center {
+    width: 65%;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 5px solid white;
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.swiper-slide.two .bottom {
+    width: 40%;
+    height: 25%;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    border: 5px solid white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/*第二屏结束*/
+/*三*/
+.swiper-slide.three div{
+    width: 100%;
+    height: 100%;
+    background: url("../img/three.jpg");
+    background-size: 100% 100%;
+}
+
+/*三*/
+/*四*/
+.swiper-slide.four {
+    background: url("../img/twobg.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+/*四*/
